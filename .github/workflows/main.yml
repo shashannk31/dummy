@@ -1,0 +1,19 @@
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: 23f2003413@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Display workflow run details
+        run: echo "This GitHub Action is now live."
